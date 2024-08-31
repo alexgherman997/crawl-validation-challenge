@@ -1,2 +1,11 @@
-id,title,year,rating,runtime,genres
-63553,Jungle Goddess,1948,2.2,62,Action
+id,title,subject,revision,author_in_description
+OL1317211W,Meditations,Philosophy,30,'Marcus Aurelius'
+OL102290W,'Letters from a Stoic',Philosophy,9,''
+OL17930368W,'Atomic Habits','Personal Growth',64,'James Clear'
+OL3931223W,Mastery,'Self-realization',7,'George Leonard'
+OL8273964W,'Nicomachean Ethics',Philosophy,31,Aristotle
+OL17075811W,Sapiens,Psychology,28,'Yuval Noah Harari'
+OL1168083W,'Nineteen Eighty-Four',Fiction,42,'George Orwell'
+OL16045198W,'The power of now',Spirituality,18,'Eckhart Tolle'
+OL5727685W,'A New Earth',Self-Improvement,32,'Eckhart Tolle'
+OL796465W,'The Alchemist',Fiction,38,'Paulo Coelho'

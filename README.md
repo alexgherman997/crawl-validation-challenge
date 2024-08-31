@@ -1,5 +1,5 @@
 # Crawl data and validation 
-Crawling data from web API with movies information and validating it using bash scripting and csv file.
+Crawling data from web API with books information and validating it using bash scripting and csv file.
 
 ## Installation steps  
 - clone repository 
@@ -8,3 +8,11 @@ Crawling data from web API with movies information and validating it using bash 
 
 ## Execution 
 - ./crawl-script.sh
+
+## Assertion structure
+Assertion for Book ID: OL1317211W 
+   Assertion passed: Title match!
+   Assertion passed: Subject match!
+   Assertion passed: Revision match!
+   Assertion passed: API Revision is numeric!
+   Assertion passed: Author in Description match!
