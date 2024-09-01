@@ -1,32 +1,11 @@
 {
-  "description": "The highly anticipated follow-up to the 2,000,000 copy bestselling inspirational book, The Power of NowWith his bestselling spiritual guide The Power of Now, Eckhart Tolle inspired millions of readers to discover the freedom and joy of a life lived \"in the now.\" In A New Earth, Tolle expands on these powerful ideas to show how transcending our ego-based state of consciousness is not only essential to personal happiness, but also the key to ending conflict and suffering throughout the world. Tolle describes how our attachment to the ego creates the dysfunction that leads to anger, jealousy, and unhappiness, and shows readers how to awaken to a new state of consciousness and follow the path to a truly fulfilling existence.The Power of Now was a question-and-answer handbook. A New Earth has been written as a traditional narrative, offering anecdotes and philosophies in a way that is accessible to all. Illuminating, enlightening, and uplifting, A New Earth is a profoundly spiritual manifesto for a better way of life—and for building a better world.",
-  "title": "A New Earth",
-  "covers": [10858608, 7148003, 362230, 456707, 1118280, 6917843, 7029592, 8335773, 8371117],
-  "subjects": [
-    "nyt:paperback_advice=2011-11-12",
-    "Self-Improvement",
-    "Spiritual life",
-    "New Age",
-    "Nonfiction",
-    "New York Times bestseller",
-    "Religious and inspirational",
-    "Personal growth and achievement",
-    "Conduct of life",
-    "Personlig utveckling"
-  ],
-  "key": "/works/OL5727685W",
+  "description": "Combining magic, mysticism, wisdom and wonder into an inspiring tale of self-discovery, The Alchemist has become a modern classic, selling millions of copies around the world and transforming the lives of countless readers across generations.\r\n\r\nPaulo Coelho's masterpiece tells the mystical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure. His quest will lead him to riches far different—and far more satisfying—than he ever imagined. Santiago's journey teaches us about the essential wisdom of listening to our hearts, of recognizing opportunity and learning to read the omens strewn along life's path, and, most importantly, to follow our dreams.",
+  "key": "/works/OL796465W",
+  "title": "The Alchemist",
   "authors": [
     {
       "author": {
-        "key": "/authors/OL1392686A"
-      },
-      "type": {
-        "key": "/type/author_role"
-      }
-    },
-    {
-      "author": {
-        "key": "/authors/OL2883809A"
+        "key": "/authors/OL66700A"
       },
       "type": {
         "key": "/type/author_role"
@@ -36,14 +15,76 @@
   "type": {
     "key": "/type/work"
   },
-  "latest_revision": 32,
-  "revision": 32,
+  "covers": [48240, 7414780, 6765020, 445076, 445074, 1359373, 39162, 8004606, 8023014, 8314135, 8616079, 8761615, 10541289, 10582587, 10582586, 998454, 4859547, 7257534, 8684195, 10571420, 4923420, 2156134, 5423842, 1054121, 7105277, 48241, 6390304, 7414779, 6930155, 8071914, 10079291, 8756737, 22871, 10705682, 11106473, 8784256, 8860898, 8993544, 9370281, 10668393, 12372777, 11556102, 11556103, 11556110, 11556111, 12553993, 12550169, 13557741, 13557742],
+  "subjects": [
+    "Translations into Indonesian",
+    "Voyages and travels",
+    "Fiction",
+    "Portuguese Fiction",
+    "Self-realization",
+    "Alchemists",
+    "Young men",
+    "Shepherds",
+    "New York Times bestseller",
+    "nyt:trade_fiction_paperback=2008-01-05",
+    "nyt:trade_fiction_paperback=2007-12-02",
+    "Fiction, visionary & metaphysical",
+    "Spain, fiction",
+    "FICTION / Literary",
+    "BODY, MIND & SPIRIT / Spirituality / General",
+    "BODY, MIND & SPIRIT / Inspiration & Personal Growth",
+    "Fables",
+    "Translations from English",
+    "Thai fiction",
+    "French language",
+    "Reading materials",
+    "Russian language edition",
+    "Powieść brazylijska",
+    "Tłumaczenia polskie",
+    "Mexican literature",
+    "Alquimia",
+    "Novela",
+    "Pastores",
+    "Andalucía (España)",
+    "Alquimistas",
+    "Large type books",
+    "Fiction, fantasy, general",
+    "Alchemy",
+    "Quests (Expeditions)",
+    "Literary",
+    "BODY, MIND & SPIRIT",
+    "Spirituality",
+    "General",
+    "Inspiration & Personal Growth",
+    "Expeditions",
+    "Parodies, imitations",
+    "Alchemists--fiction",
+    "Shepherds--spain--andalusia--fiction",
+    "869.3",
+    "History",
+    "Politics and government"
+  ],
+  "subject_places": [
+    "Spain",
+    "Saara Desert",
+    "Andalusia",
+    "Andalusia (Spain)"
+  ],
+  "subject_people": [
+    "Paulo Coelho",
+    "Daniel Sampere",
+    "Derek Ruiz",
+    "Sea Lion Books",
+    "HarperCollins"
+  ],
+  "latest_revision": 38,
+  "revision": 38,
   "created": {
     "type": "/type/datetime",
-    "value": "2009-12-10T11:09:44.091926"
+    "value": "2009-12-09T04:18:04.254120"
   },
   "last_modified": {
     "type": "/type/datetime",
-    "value": "2022-01-26T16:55:23.149833"
+    "value": "2024-07-13T03:27:20.561885"
   }
 }
