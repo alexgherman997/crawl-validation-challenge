@@ -11,7 +11,7 @@ Books API docs: https://openlibrary.org/dev/docs/api/books
 - ./crawl-script.sh
 
 ## Validation explanation 
-Books information is crawled using ID field from validation.csv.
+Books information is crawled using ID field from validation.csv.<br>
 3 types of assertions are performed:
 - assertions to check equality(or contains) between values from validation.csv and web API for fields Title, Subject, Revision, Author_in_Description
 - assertions to check the type of the fields ID and Revision, and maximum length for fields Title and Subject
