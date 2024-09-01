@@ -9,10 +9,10 @@ Books API docs: https://openlibrary.org/dev/docs/api/books
 
 ## Execution 
 - ./crawl-validate.sh
+- execution can be checked or triggered from Github CI: click on Actions tab, on the left side click on 'Crawl and validate', and click on 'Run workflow' button. 
 
 ## Validation explanation 
 Books information is crawled using ID field from validation.csv.<br>
-Execution can be checked or triggered from Github CI: click on Actions tab, on the left side click on 'Crawl and validate', and click on 'Run workflow' button. <br>
 3 types of assertions are performed:
 - assertions to check equality(or contains) between values from validation.csv and web API for fields Title, Subject, Revision, Author_in_Description
 - assertions to check the type of the fields ID and Revision, and maximum length for fields Title and Subject
