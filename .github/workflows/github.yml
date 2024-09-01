@@ -14,5 +14,5 @@ jobs:
 
     - name: Run validation script
       run: |
-        chmod +x crawl-scrip.sh
+        chmod +x crawl-script.sh
         ./crawl-script.sh
