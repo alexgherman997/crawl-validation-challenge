@@ -11,10 +11,11 @@ Books API docs: https://openlibrary.org/dev/docs/api/books
 - ./crawl-script.sh
 
 ## Validation explanation 
-App is doing 3 types of assertions:
-- performing assertions to check equality(or contains) between values from the web API and validation.csv for fields Title, Subject, Revision, Author_in_Description
-- performing assertions to check the type of the fields ID and Revision, and maximum length for fields Title and Subject
-- performing assertions to check if mandatory fields have value for Title, Subject and Revision
+Books information is crawled using ID field from validation.csv.
+3 types of assertions are performed:
+- assertions to check equality(or contains) between values from validation.csv and web API for fields Title, Subject, Revision, Author_in_Description
+- assertions to check the type of the fields ID and Revision, and maximum length for fields Title and Subject
+- assertions to check if mandatory fields have value for Title, Subject and Revision
 
 ## Assertion structure
 Assertion for Book ID: OL796465W
