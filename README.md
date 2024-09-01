@@ -4,11 +4,11 @@ Books API docs: https://openlibrary.org/dev/docs/api/books
 
 ## Installation steps  
 - clone repository 
-- chmod +x crawl-script.sh - give execution rights for script run
+- chmod +x crawl-validate.sh - give execution rights for script run
 - brew install jq - install jq command to parse JSON for macOS 
 
 ## Execution 
-- ./crawl-script.sh
+- ./crawl-validate.sh
 
 ## Validation explanation 
 Books information is crawled using ID field from validation.csv.<br>
