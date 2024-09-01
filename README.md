@@ -11,24 +11,26 @@ Books API docs: https://openlibrary.org/dev/docs/api/books
 - ./crawl-validate.sh
 - execution can be checked or triggered from Github CI: click on Actions tab, on the left side click on 'Crawl and validate', and click on 'Run workflow' button. 
 
-## Validation explanation 
+## Test cases explanation 
 Books information is crawled using ID field from validation.csv.<br>
-3 types of assertions are performed:
+3 types of test cases are performed:
 - assertions to check equality(or contains) between values from validation.csv and web API for fields Title, Subject, Revision, Author_in_Description
 - assertions to check the type of the fields ID and Revision, and maximum length for fields Title and Subject
 - assertions to check if mandatory fields have value for Title, Subject and Revision
 
+## Tests structure
+Tests for Book ID: OL796465W
+- Test passed: Title match csv value!
+- Test passed: Subject match csv value!
+- Test passed: Revision match csv value!
+- Test passed: Author in Description match csv value!
+- Test passed: ID 'OL796465W' is valid.
+- Test passed: Title length is within limit.
+- Test passed: Subject length is within limit.
+- Test passed: Revision is numeric.
+- Test passed: Title is not empty.
+- Test passed: Subject is not empty.
+- Test passed: Revision is not empty.
 
-## Assertion structure
-Assertion for Book ID: OL796465W
-- Assertion passed: Title match csv value!
-- Assertion passed: Subject match csv value!
-- Assertion passed: Revision match csv value!
-- Assertion passed: Author in Description match csv value!
-- Assertion passed: ID 'OL796465W' is valid.
-- Assertion passed: Title length is within limit.
-- Assertion passed: Subject length is within limit.
-- Assertion passed: Revision is numeric.
-- Assertion passed: Title is not empty.
-- Assertion passed: Subject is not empty.
-- Assertion passed: Revision is not empty.
+## Test Results 
+110 tests passed (11 test executed for each of 10 Books)

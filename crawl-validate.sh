@@ -9,9 +9,9 @@ assert_equal() {
     local field_name="$3"
 
     if [[ "$csv_value" == "$api_value" ]]; then
-        echo "   Assertion passed: $field_name match csv value!"
+        echo "   Test passed: $field_name match csv value!"
     else
-        echo "   Assertion failed: $field_name do not match csv value!"
+        echo "   Test failed: $field_name do not match csv value!"
         echo "   CSV $field_name: $csv_value"
         echo "   API $field_name: $api_value"
     fi
@@ -24,9 +24,9 @@ assert_contains() {
     local field_name="$3"
 
     if [[ "$api_array" == *"$csv_value"* ]]; then
-        echo "   Assertion passed: $field_name match csv value!"
+        echo "   Test passed: $field_name match csv value!"
     else
-        echo "   Assertion failed: $field_name '$csv_value' not found in API $field_name!"
+        echo "   Test failed: $field_name '$csv_value' not found in API $field_name!"
         echo "   CSV $field_name: $csv_value"
         echo "   API $field_name: $api_array"
     fi
@@ -38,15 +38,15 @@ assert_id_format() {
 
     # Check if ID is not empty
     if [[ -z "$id" ]]; then
-        echo "   Assertion failed: ID is missing."
+        echo "   Test failed: ID is missing."
         return
     fi
 
     # Check if ID starts with 'OL' and ends with 'W'
     if [[ "$id" =~ ^OL.*W$ ]]; then
-        echo "   Assertion passed: ID '$id' is valid."
+        echo "   Test passed: ID '$id' is valid."
     else
-        echo "   Assertion failed: ID '$id' does not start with 'OL' or end with 'W'."
+        echo "   Test failed: ID '$id' does not start with 'OL' or end with 'W'."
     fi
 }
 
@@ -55,9 +55,9 @@ assert_numeric() {
     local value="$1"
     local field_name="$2"
     if [[ "$value" =~ ^[0-9]+$ ]]; then
-        echo "   Assertion passed: $field_name is numeric."
+        echo "   Test passed: $field_name is numeric."
     else
-        echo "   Assertion failed: $field_name is not numeric."
+        echo "   Test failed: $field_name is not numeric."
         echo "   $field_name: $value"
     fi
 }
@@ -69,9 +69,9 @@ assert_max_length() {
     local field_name="$3"
 
     if [[ "${#value}" -le "$max_length" ]]; then
-        echo "   Assertion passed: $field_name length is within limit."
+        echo "   Test passed: $field_name length is within limit."
     else
-        echo "   Assertion failed: $field_name length exceeds $max_length characters!"
+        echo "   Test failed: $field_name length exceeds $max_length characters!"
         echo "   $field_name: $value"
     fi
 }
@@ -82,9 +82,9 @@ assert_not_empty() {
     local field_name="$2"
 
     if [[ -n "$value" ]]; then
-        echo "   Assertion passed: $field_name is not empty."
+        echo "   Test passed: $field_name is not empty."
     else
-        echo "   Assertion failed: $field_name is empty!"
+        echo "   Test failed: $field_name is empty!"
         echo "   $field_name: $value"
     fi
 }
@@ -114,21 +114,21 @@ while IFS=',' read -r id title subject revision author_in_description; do
     revision_book=$(echo "$response" | jq -r '.revision')
     author_in_description_book=$(echo "$response" | jq -r '.description')
 
-    # Perform equality assertions between api and csv
-    echo "Assertion for Book ID: $id"
+    # Test cases equality between api and csv
+    echo "Tests for Book ID: $id"
     assert_equal "$title_csv" "$title_book" "Title"
     subject_match=$(echo "$response" | jq --arg subject "$subject_csv" '.subjects | index($subject)')
     assert_contains "$subject_csv" "$subject_book" "Subject"
     assert_equal "$revision_csv" "$revision_book" "Revision"
     assert_contains "$author_in_description_csv" "$author_in_description_book" "Author in Description"
 
-    # Performon field type assertions  
+    # Test cases field type   
     assert_id_format "$id"
     assert_max_length "$title_book" 100 "Title"
     assert_max_length "$subject_csv" 50 "Subject"
     assert_numeric "$revision_book" "Revision"
     
-    # Perform mandatory field assertions 
+    # Test cases mandatory field  
     assert_not_empty "$title_book" "Title"
     assert_not_empty "$subject_book" "Subject"
     assert_not_empty "$revision_book" "Revision"
