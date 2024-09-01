@@ -1,5 +1,5 @@
 # Crawl data and validation 
-Crawling data from web API with books information and validating it using bash scripting and csv file.<br>
+Crawling data from a web API with books information and validating it using bash scripting and validation.csv.<br>
 Books API docs: https://openlibrary.org/dev/docs/api/books
 
 ## Installation steps  
